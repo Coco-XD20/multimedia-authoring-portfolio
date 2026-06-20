@@ -1,0 +1,31 @@
+{
+  "name": "multimedia-authoring-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for multimedia and authoring projects - GitHub Pages ready",
+  "main": "index.html",
+  "scripts": {
+    "serve": "python -m http.server 8000",
+    "serve:windows": "python -m http.server 8000 --bind 127.0.0.1",
+    "start": "npm run serve",
+    "build": "echo 'No build process needed - ready for GitHub Pages'",
+    "deploy": "git add . && git commit -m 'Update portfolio' && git push origin main"
+  },
+  "keywords": [
+    "portfolio",
+    "multimedia",
+    "3d-art",
+    "animation",
+    "github-pages",
+    "responsive-design"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Coco-XD20/multimedia-authoring-portfolio.git"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {
+    "http-server": "^14.0.0"
+  }
+}

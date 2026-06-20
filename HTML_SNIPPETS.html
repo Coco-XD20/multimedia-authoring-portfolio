@@ -1,0 +1,423 @@
+<!-- 
+    HTML SNIPPETS & TEMPLATES
+    Common code snippets for adding content to your portfolio
+    Copy and paste these as needed
+-->
+
+<!-- ============================================
+     IMAGE WITH PLACEHOLDER FALLBACK
+     ============================================ -->
+
+<!-- Simple Image -->
+<img src="assets/images/your-image.jpg" alt="Descriptive text">
+
+<!-- Image with Fallback -->
+<picture>
+    <img src="assets/images/your-image.jpg" alt="Descriptive text">
+</picture>
+
+
+<!-- ============================================
+     PROJECT CARD (About Page)
+     ============================================ -->
+
+<article class="project-card">
+    <div class="project-card-image">
+        <img src="assets/images/project.jpg" alt="Project Name">
+    </div>
+    <div class="project-card-content">
+        <h3>Project Name</h3>
+        <p>Brief description of your project goes here.</p>
+        <a href="portfolio.html" class="card-link">View Project →</a>
+    </div>
+</article>
+
+
+<!-- ============================================
+     GALLERY ITEM (Rotoscope/Solar System)
+     ============================================ -->
+
+<div class="gallery-item">
+    <div class="gallery-image">
+        <img src="assets/images/gallery-item.jpg" alt="Item Title">
+    </div>
+    <h3>Gallery Item Title</h3>
+    <p>Description of this gallery item</p>
+</div>
+
+
+<!-- ============================================
+     PLANET CARD (Solar System Page)
+     ============================================ -->
+
+<div class="planet-card">
+    <div class="planet-image">
+        <img src="assets/images/planet-name.jpg" alt="Planet Name">
+    </div>
+    <div class="planet-info">
+        <h3>Planet Name</h3>
+        <p>Description or interesting facts about this planet.</p>
+        <span class="planet-fact">Diameter: X km</span>
+    </div>
+</div>
+
+
+<!-- ============================================
+     FEATURED PROJECT CARD (Portfolio Page)
+     ============================================ -->
+
+<article class="featured-card">
+    <div class="featured-image">
+        <img src="assets/images/featured-project.jpg" alt="Project Name">
+    </div>
+    <div class="featured-content">
+        <h3>Project Title</h3>
+        <p class="project-category">3D Modeling • Rendering • Animation</p>
+        <p>Detailed description of this featured project including the creative process and artistic vision.</p>
+        <div class="project-tags">
+            <span class="tag">Blender</span>
+            <span class="tag">3D Modeling</span>
+            <span class="tag">Rendering</span>
+        </div>
+    </div>
+</article>
+
+
+<!-- ============================================
+     SKILL/TOOL CARD
+     ============================================ -->
+
+<div class="skill-category">
+    <h3>Skill Category</h3>
+    <ul class="skill-list">
+        <li><span class="skill-tag">Skill One</span></li>
+        <li><span class="skill-tag">Skill Two</span></li>
+        <li><span class="skill-tag">Skill Three</span></li>
+        <li><span class="skill-tag">Skill Four</span></li>
+    </ul>
+</div>
+
+
+<!-- ============================================
+     DETAIL/PROCESS CARD
+     ============================================ -->
+
+<div class="detail-card">
+    <h3>Card Title</h3>
+    <p>Description of this aspect or step in your process.</p>
+</div>
+
+
+<!-- ============================================
+     VIDEO EMBED - LOCAL
+     ============================================ -->
+
+<!-- Basic Video -->
+<video width="100%" controls>
+    <source src="assets/videos/video-name.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Video with Poster -->
+<video width="100%" controls poster="assets/images/poster.jpg">
+    <source src="assets/videos/video-name.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Responsive Video Container -->
+<div class="video-container" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
+    <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+        <source src="assets/videos/video-name.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+<!-- ============================================
+     VIDEO EMBED - YOUTUBE
+     ============================================ -->
+
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+            src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+</div>
+
+
+<!-- ============================================
+     SECTION WITH ANIMATION CLASSES
+     ============================================ -->
+
+<!-- These automatically trigger animations on scroll -->
+<section class="slide-up">
+    <div class="container">
+        <h2 class="section-title">Section Title</h2>
+        <!-- Your content here -->
+    </div>
+</section>
+
+
+<!-- ============================================
+     BUTTON VARIATIONS
+     ============================================ -->
+
+<!-- Primary Button -->
+<a href="#" class="btn btn-primary">Button Text</a>
+
+<!-- Styled Link -->
+<a href="#" class="card-link">Link Text →</a>
+
+
+<!-- ============================================
+     SKILL TAG
+     ============================================ -->
+
+<span class="skill-tag">Skill Name</span>
+<span class="tag">Tag Name</span>
+
+
+<!-- ============================================
+     SECTION CONTAINER
+     ============================================ -->
+
+<section class="your-section-name">
+    <div class="container">
+        <h2 class="section-title">Section Title</h2>
+        <p class="section-description">
+            Section description goes here. This explains what this section contains.
+        </p>
+        <!-- Your content grid here -->
+        <div class="your-grid-class">
+            <!-- Items here -->
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================
+     RESPONSIVE IMAGE GRID
+     ============================================ -->
+
+<div class="gallery-grid">
+    <!-- Gallery items repeat here -->
+    <div class="gallery-item">
+        <!-- Item content -->
+    </div>
+</div>
+
+
+<!-- ============================================
+     NAVIGATION STRUCTURE
+     ============================================ -->
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Portfolio</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="rotoscope.html" class="nav-link">Rotoscope</a></li>
+            <li><a href="solar-system.html" class="nav-link">Solar System</a></li>
+            <li><a href="portfolio.html" class="nav-link">3D Portfolio</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ============================================
+     SEO META TAGS (In <head>)
+     ============================================ -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Description of your page - used in search results">
+<meta name="keywords" content="portfolio, 3d art, animation, multimedia">
+<meta name="author" content="Your Name">
+<meta property="og:title" content="Page Title">
+<meta property="og:description" content="Page description">
+<meta property="og:image" content="assets/images/preview.jpg">
+
+
+<!-- ============================================
+     PAGINATION (If Needed)
+     ============================================ -->
+
+<div class="pagination">
+    <a href="#" class="page-link">← Previous</a>
+    <span class="page-info">Page 1 of 5</span>
+    <a href="#" class="page-link">Next →</a>
+</div>
+
+
+<!-- ============================================
+     QUOTE/TESTIMONIAL
+     ============================================ -->
+
+<blockquote class="quote">
+    <p>"Your quote or testimonial goes here."</p>
+    <cite>— Author Name</cite>
+</blockquote>
+
+
+<!-- ============================================
+     CODE BLOCK
+     ============================================ -->
+
+<pre><code>
+// Your code here
+function example() {
+    console.log("Hello World");
+}
+</code></pre>
+
+
+<!-- ============================================
+     ALERT/NOTIFICATION
+     ============================================ -->
+
+<div class="alert alert-info">
+    <strong>Info:</strong> This is an informational message.
+</div>
+
+<div class="alert alert-success">
+    <strong>Success:</strong> Operation completed successfully!
+</div>
+
+<div class="alert alert-warning">
+    <strong>Warning:</strong> Please be careful.
+</div>
+
+<div class="alert alert-error">
+    <strong>Error:</strong> Something went wrong.
+</div>
+
+
+<!-- ============================================
+     LOADING SKELETON
+     ============================================ -->
+
+<div class="skeleton">
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-box"></div>
+</div>
+
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+
+<!-- ============================================
+     GRID LAYOUTS
+     ============================================ -->
+
+<!-- 2 Column Grid -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+    <div>Column 1</div>
+    <div>Column 2</div>
+</div>
+
+<!-- 3 Column Grid -->
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+    <div>Column 1</div>
+    <div>Column 2</div>
+    <div>Column 3</div>
+</div>
+
+<!-- Responsive Grid -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+</div>
+
+
+<!-- ============================================
+     FLEXBOX LAYOUTS
+     ============================================ -->
+
+<!-- Centered Content -->
+<div style="display: flex; justify-content: center; align-items: center; min-height: 400px;">
+    <div>Centered Content</div>
+</div>
+
+<!-- Space Between Items -->
+<div style="display: flex; justify-content: space-between; gap: 2rem;">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+</div>
+
+
+<!-- ============================================
+     COMMONLY USED CSS CLASSES
+     ============================================ -->
+
+<!-- Text Utilities -->
+class="text-center"        <!-- Center text -->
+class="text-primary"       <!-- Primary color -->
+class="text-accent"        <!-- Accent color -->
+class="text-muted"         <!-- Muted gray color -->
+
+<!-- Background Utilities -->
+class="bg-dark"            <!-- Dark background -->
+class="bg-darker"          <!-- Darker background -->
+
+<!-- Margin Utilities -->
+class="mt-1"              <!-- Top margin -->
+class="mt-2"              <!-- Larger top margin -->
+class="mb-1"              <!-- Bottom margin -->
+class="mb-2"              <!-- Larger bottom margin -->
+
+
+<!-- ============================================
+     ANIMATION TRIGGER CLASSES
+     ============================================ -->
+
+<!-- Add these classes to elements for automatic animations -->
+class="fade-in"           <!-- Fade in animation -->
+class="slide-up"          <!-- Slide up animation -->
+class="slide-left"        <!-- Slide left animation -->
+class="slide-right"       <!-- Slide right animation -->
+class="scale-up"          <!-- Scale up animation -->
+
+
+<!-- ============================================
+     HELPFUL NOTES
+     ============================================ -->
+
+<!--
+1. Always include alt text for images
+2. Use semantic HTML elements (section, article, nav, etc.)
+3. Test all links before deploying
+4. Optimize images for web (under 500KB each)
+5. Check responsive design on mobile
+6. Keep file paths relative (assets/images/file.jpg)
+7. Use descriptive file names
+8. Comment your code for clarity
+9. Validate HTML with https://validator.w3.org/
+10. Test accessibility with https://www.axe-core.org/
+-->
+
