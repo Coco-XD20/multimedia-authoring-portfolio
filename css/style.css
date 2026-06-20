@@ -1141,6 +1141,208 @@ section {
     font-size: 1rem;
 }
 
+.showcase-video-container {
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.6s ease-out;
+}
+
+.showcase-video-container iframe {
+    display: block;
+}
+
+/* ============================================
+   PLANET INFO CARDS
+   ============================================ */
+
+.planet-videos-section {
+    background: var(--dark-bg);
+    padding: 5rem 0;
+}
+
+.planet-info-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    animation: slideUp 0.6s ease-out forwards;
+    opacity: 0;
+    transition: all var(--transition-smooth);
+}
+
+.planet-info-card:nth-child(1) { animation-delay: 0.1s; }
+.planet-info-card:nth-child(2) { animation-delay: 0.15s; }
+.planet-info-card:nth-child(3) { animation-delay: 0.2s; }
+.planet-info-card:nth-child(4) { animation-delay: 0.25s; }
+.planet-info-card:nth-child(5) { animation-delay: 0.3s; }
+.planet-info-card:nth-child(6) { animation-delay: 0.35s; }
+.planet-info-card:nth-child(7) { animation-delay: 0.4s; }
+.planet-info-card:nth-child(8) { animation-delay: 0.45s; }
+.planet-info-card:nth-child(9) { animation-delay: 0.5s; }
+.planet-info-card:nth-child(10) { animation-delay: 0.55s; }
+
+.planet-info-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    box-shadow: 0 16px 40px rgba(0, 217, 255, 0.12);
+}
+
+.planet-video {
+    position: relative;
+    overflow: hidden;
+}
+
+.planet-video iframe,
+.planet-video .placeholder-video {
+    display: block;
+    height: 100%;
+    min-height: 280px;
+}
+
+.planet-details {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.planet-name {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.75rem;
+}
+
+.planet-stats {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.stat {
+    font-size: 0.95rem;
+    color: var(--light-text);
+    line-height: 1.5;
+}
+
+.stat-label {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+
+.stat-dynamic {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.calc-value {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* ============================================
+   TIME CALCULATOR
+   ============================================ */
+
+.time-calculator {
+    background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.calculator-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 2rem auto 0;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    animation: scaleUp 0.6s ease-out;
+}
+
+.calculator-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--light-text);
+}
+
+.calculator-input {
+    background: var(--darker-bg);
+    border: 2px solid var(--border-color);
+    color: var(--light-text);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    width: 140px;
+    text-align: center;
+    transition: border-color var(--transition-base);
+    outline: none;
+}
+
+.calculator-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
+}
+
+.calculator-input::-webkit-inner-spin-button,
+.calculator-input::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+/* ============================================
+   RESPONSIVE - PLANET CARDS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .planet-info-card {
+        grid-template-columns: 1fr;
+    }
+
+    .planet-video iframe,
+    .planet-video .placeholder-video {
+        min-height: 220px;
+    }
+
+    .planet-details {
+        padding: 1.5rem;
+    }
+
+    .planet-name {
+        font-size: 1.4rem;
+    }
+
+    .calculator-box {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .calculator-input {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .showcase-video-container iframe {
+        height: 300px;
+    }
+}
+
 /* ============================================
    PORTFOLIO SECTIONS
    ============================================ */

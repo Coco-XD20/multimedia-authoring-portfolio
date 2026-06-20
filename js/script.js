@@ -338,14 +338,13 @@ window.addEventListener('resize', debounce(() => {
 /**
  * Log performance metrics (optional)
  */
-if (process.env.NODE_ENV === 'development' || window.location.hostname === 'localhost') {
-    window.addEventListener('load', () => {
+window.addEventListener('load', () => {
+    if (window.location.hostname === 'localhost') {
         const perfData = window.performance.timing;
         const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
         console.log(`Page Load Time: ${pageLoadTime}ms`);
-    });
-}
-
+    }
+});
 // ============================================
 // ACCESSIBILITY
 // ============================================
