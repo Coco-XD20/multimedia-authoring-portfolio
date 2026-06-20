@@ -124,6 +124,7 @@ section {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
+    white-space: nowrap;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1518,6 +1519,14 @@ section {
    ============================================ */
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 1rem;
+    }
+
+    .nav-logo a {
+        font-size: 1.1rem;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -1583,6 +1592,10 @@ section {
 }
 
 @media (max-width: 480px) {
+    .nav-logo a {
+        font-size: 0.95rem;
+    }
+
     .hero-title {
         font-size: 1.8rem;
     }
