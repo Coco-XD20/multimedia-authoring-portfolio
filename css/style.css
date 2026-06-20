@@ -697,6 +697,15 @@ section {
     margin-bottom: 1rem;
 }
 
+.contact-placeholder a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-placeholder a:hover {
+    color: var(--secondary-color);
+}
+
 /* ============================================
    GALLERY GRID
    ============================================ */
