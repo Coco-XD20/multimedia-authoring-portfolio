@@ -439,28 +439,13 @@ section {
 }
 
 /* Scroll trigger animations */
-.fade-in {
-    opacity: 0;
-}
-
-.slide-up {
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-.slide-left {
-    opacity: 0;
-    transform: translateX(-30px);
-}
-
-.slide-right {
-    opacity: 0;
-    transform: translateX(30px);
-}
-
+.fade-in,
+.slide-up,
+.slide-left,
+.slide-right,
 .scale-up {
-    opacity: 0;
-    transform: scale(0.9);
+    opacity: 1;
+    transform: none;
 }
 
 /* ============================================
