@@ -440,28 +440,27 @@ section {
 
 /* Scroll trigger animations */
 .fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
     opacity: 0;
 }
 
 .slide-up {
-    animation: slideUp 0.6s ease-out forwards;
     opacity: 0;
+    transform: translateY(30px);
 }
 
 .slide-left {
-    animation: slideInLeft 0.6s ease-out forwards;
     opacity: 0;
+    transform: translateX(-30px);
 }
 
 .slide-right {
-    animation: slideInRight 0.6s ease-out forwards;
     opacity: 0;
+    transform: translateX(30px);
 }
 
 .scale-up {
-    animation: scaleUp 0.6s ease-out forwards;
     opacity: 0;
+    transform: scale(0.9);
 }
 
 /* ============================================
@@ -478,14 +477,6 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-}
-
-.about-text {
-    animation: slideInLeft 0.8s ease-out;
-}
-
-.about-image {
-    animation: slideInRight 0.8s ease-out;
 }
 
 .section-title {
@@ -1431,6 +1422,7 @@ section {
     max-height: 500px;
     overflow: hidden;
     background: #000;
+    position: relative;
 }
 
 .render-hero-image img {
@@ -1443,6 +1435,19 @@ section {
 
 .render-hero:hover .render-hero-image img {
     transform: scale(1.03);
+}
+
+.render-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.render-badge img {
+    display: block;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
 }
 
 .render-hero-info {
@@ -1634,8 +1639,24 @@ section {
    ============================================ */
 
 /* These classes get applied by JavaScript on scroll */
-.animate-on-scroll {
-    animation-fill-mode: forwards;
+.fade-in.animate-on-scroll {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-up.animate-on-scroll {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.slide-left.animate-on-scroll {
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.slide-right.animate-on-scroll {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.scale-up.animate-on-scroll {
+    animation: scaleUp 0.6s ease-out forwards;
 }
 
 /* ============================================

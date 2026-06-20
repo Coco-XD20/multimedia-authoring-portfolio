@@ -10,8 +10,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
-    initScrollAnimations();
     setupScrollAnimationTriggers();
+    initScrollAnimations();
 });
 
 // ============================================
