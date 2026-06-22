@@ -125,10 +125,8 @@ section {
     font-size: 1.5rem;
     font-weight: 700;
     white-space: nowrap;
-    background: linear-gradient(135deg, #00d9ff, #9d4edd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #00d9ff;
+    text-shadow: 0 0 16px rgba(0, 217, 255, 0.28);
     transition: transform 0.3s ease;
 }
 
@@ -266,10 +264,8 @@ section {
     font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 800;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #00d9ff, #ff006e, #9d4edd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #00d9ff;
+    text-shadow: 0 0 24px rgba(255, 0, 110, 0.22);
     animation: slideInDown 0.8s ease-out;
 }
 
@@ -953,7 +949,7 @@ section {
 .tag:hover {
     background: #00d9ff;
     color: #0a0e27;
-    border-color: #00d9ff;
+    border-color: #9d4edd;
 }
 
 /* ============================================
@@ -1012,7 +1008,7 @@ section {
 .tool-list span:hover {
     background: #00d9ff;
     color: #0a0e27;
-    border-color: #00d9ff;
+    border-color: #9d4edd;
 }
 
 /* ============================================
@@ -1090,10 +1086,8 @@ section {
 .step-number {
     font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #00d9ff, #9d4edd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #9d4edd;
+    text-shadow: 0 0 18px rgba(157, 78, 221, 0.28);
     margin-bottom: 1rem;
 }
 
@@ -1285,11 +1279,6 @@ section {
 .calculator-input:focus {
     border-color: #00d9ff;
     box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
-}
-
-.calculator-input::-webkit-inner-spin-button,
-.calculator-input::-webkit-outer-spin-button {
-    opacity: 1;
 }
 
 /* ============================================
