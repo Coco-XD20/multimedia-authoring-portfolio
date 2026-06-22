@@ -796,6 +796,13 @@ section {
     box-shadow: 0 20px 40px rgba(0, 217, 255, 0.15);
 }
 
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+}
+
 .placeholder-video {
     margin: 0;
 }
