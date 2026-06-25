@@ -65,7 +65,7 @@
             <div class="calculator-box">
                 <label for="earth-years" class="calculator-label">Earth Years:</label>
                 <input type="number" id="earth-years" class="calculator-input" value="1" min="0" step="0.1">
-                <button id="calc-btn" class="btn btn-primary">Calculate</button>
+                <button id="calc-btn" type="button" class="btn btn-primary">Calculate</button>
             </div>
         </div>
     </section>
@@ -299,13 +299,20 @@
                 const calcEl = card.querySelector('.calc-value');
                 if (!calcEl) continue;
 
+                if (key === 'sun') {
+                    const solarRotationYears = 25 / 365.25; // approximate solar equatorial rotation in years
+                    const rotations = earthYears / solarRotationYears;
+                    calcEl.textContent = `${rotations.toFixed(0)} rotations in ${earthYears} Earth years`;
+                    continue;
+                }
+
                 if (data.orbitalPeriod === null) {
                     calcEl.textContent = 'N/A';
                     continue;
                 }
 
                 const orbits = earthYears / data.orbitalPeriod;
-                calcEl.textContent = `${orbits.toFixed(2)} orbits (${data.label} years)`;
+                calcEl.textContent = `${orbits.toFixed(2)} ${data.label} years in ${earthYears} Earth years`;
             }
         }
 
@@ -313,21 +320,34 @@
             const input = document.getElementById('earth-years');
             const btn = document.getElementById('calc-btn');
 
-            function calculate() {
+            if (!input || !btn) {
+                console.warn('Planetary calculator initialization failed: missing inputs.');
+                return;
+            }
+
+            btn.setAttribute('type', 'button');
+
+            const calculate = (showAlert = true) => {
                 const years = parseFloat(input.value);
                 if (isNaN(years) || years < 0) {
-                    alert('Please enter a valid positive number.');
+                    if (showAlert) {
+                        alert('Please enter a valid positive number.');
+                    }
                     return;
                 }
                 updatePlanetCalculations(years);
-            }
+            };
 
             btn.addEventListener('click', calculate);
+            input.addEventListener('input', () => calculate(false));
             input.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') calculate();
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    calculate();
+                }
             });
 
-            updatePlanetCalculations(1);
+            updatePlanetCalculations(parseFloat(input.value) || 1);
         });
     </script>
 </body>

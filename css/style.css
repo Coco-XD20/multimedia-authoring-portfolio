@@ -1221,12 +1221,12 @@ section {
 
 .stat {
     font-size: 0.95rem;
-    color: #f8f9fa;
+    color: #d8b4fe;
     line-height: 1.5;
 }
 
 .stat-label {
-    color: #9d4edd;
+    color: #c084fc;
     font-weight: 600;
     margin-right: 0.3rem;
 }
@@ -1235,12 +1235,12 @@ section {
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid #2d3561;
-    color: #ff006e;
+    color: #e9d5ff;
     font-weight: 600;
 }
 
 .calc-value {
-    color: #00d9ff;
+    color: #c084fc;
     font-weight: 700;
 }
 
